@@ -1,0 +1,9 @@
+menu "ztemplate"
+
+module = ZTEMPLATE
+module-str = ztemplate
+source "subsys/logging/Kconfig.template.log_config"
+
+rsource "src/led_toggler/Kconfig"
+
+endmenu

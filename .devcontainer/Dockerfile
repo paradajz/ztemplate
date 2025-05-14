@@ -1,0 +1,1 @@
+FROM ghcr.io/paradajz/zenv:2d6da26dbf4fe5382bdfc7a3892590e9adf13c1e

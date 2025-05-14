@@ -1,0 +1,5 @@
+config ZTEMPLATE_LED_TOGGLER_LIB
+    bool "LED toggler library"
+    default n
+    help
+      Example library which configures and toggles built-in board LED.

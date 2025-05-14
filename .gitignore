@@ -1,0 +1,6 @@
+**/.cache*/
+**/build/*
+**/ccache/*
+**/compile_commands.json
+*.cortex-debug*
+.west-updated
