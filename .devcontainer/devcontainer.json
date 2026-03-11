@@ -15,11 +15,6 @@
             "source": "${localEnv:HOME}/.gitconfig",
             "target": "/etc/gitconfig",
             "type": "bind"
-        },
-        {
-            "source": "${localEnv:HOME}/.ssh",
-            "target": "/home/ubuntu/.ssh",
-            "type": "bind"
         }
     ],
     "containerUser": "ubuntu",
@@ -27,7 +22,6 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "eamodio.gitlens",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "marus25.cortex-debug",
                 "ms-vscode.cpptools",

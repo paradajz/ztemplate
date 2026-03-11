@@ -33,7 +33,7 @@
             "interface": "swd",
             "device": "stm32f767zi",
             "runToEntryPoint": "main",
-            "preLaunchTask": "[Build] default",
+            "preLaunchTask": "[Build] app",
             "gdbPath": "${env:ZEPHYR_SDK_INSTALL_DIR}/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
             "preLaunchCommands": [
                 "add-symbol-file ${workspaceFolder}/build/app/default/debug/app/zephyr/zephyr.elf",

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Igor Petrovic
+ * SPDX-License-Identifier: MIT
+ */
+
 #include "ztemplate/led_toggler/led_toggler.h"
 
 #include <utility>

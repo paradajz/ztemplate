@@ -1,4 +1,9 @@
-#include "tests/common.h"
+/*
+ * Copyright (c) 2026 Igor Petrovic
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "tests/tests_common.h"
 
 #include "ztemplate/led_toggler/led_toggler.h"
 
@@ -20,10 +25,10 @@ class LedTogglerTest : public ::testing::Test
     {
     }
 
-    ztemplate::led_toggler::LedToggler _ledToggler = ztemplate::led_toggler::LedToggler({});
+    ztemplate::led_toggler::LedToggler _led_toggler = ztemplate::led_toggler::LedToggler({});
 };
 
 TEST_F(LedTogglerTest, Init)
 {
-    ASSERT_FALSE(_ledToggler.init());
+    ASSERT_FALSE(_led_toggler.init());
 }

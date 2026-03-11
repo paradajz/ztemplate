@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Igor Petrovic
+ * SPDX-License-Identifier: MIT
+ */
+
 #pragma once
 
 #include <zephyr/drivers/gpio.h>

@@ -3,9 +3,9 @@ presets:
   -
     name: "default"
     board: "nucleo_f767zi"
-    cmake-file: "default.cmake"
+    cmake-file: "app.cmake"
     overlay-file: "boards/nucleo_f767zi/nucleo_f767zi.overlay"
     conf-files:
       common:
-        - "common.conf"
+        - "app.conf"
     flash-runner: "openocd"

@@ -1,1 +1,1 @@
-Directory containing patches which will be applied to Zephyr workspace.
+Directory containing patches which will be applied to the Zephyr workspace.

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Igor Petrovic
+ * SPDX-License-Identifier: MIT
+ */
+
 #include "ztemplate/led_toggler/led_toggler.h"
 
 #include <zephyr/kernel.h>
@@ -12,9 +17,9 @@ namespace
 
 int main()
 {
-    auto ledTogglerInstance = ztemplate::led_toggler::LedToggler(GPIO_DT_SPEC_GET(DT_ALIAS(toggle_led), gpios));
+    auto led_toggler_instance = ztemplate::led_toggler::LedToggler(GPIO_DT_SPEC_GET(DT_ALIAS(toggle_led), gpios));
 
-    if (!ledTogglerInstance.init())
+    if (!led_toggler_instance.init())
     {
         LOG_ERR("LED init failed");
         return 0;
@@ -22,7 +27,7 @@ int main()
 
     while (1)
     {
-        ledTogglerInstance.toggle();
+        led_toggler_instance.toggle();
         LOG_INF("LED toggled");
         k_msleep(SLEEP_TIME_MS);
     }
