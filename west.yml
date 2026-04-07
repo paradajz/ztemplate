@@ -3,5 +3,15 @@
 # file, but can be overridden here.
 
 manifest:
+  remotes:
+  - name: paradajz
+    url-base: https://github.com/paradajz
+
+  projects:
+    - name: zlibs
+      remote: paradajz
+      revision: master
+      path: modules/zlibs
+
   self:
     import: zephyr/west

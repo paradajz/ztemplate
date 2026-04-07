@@ -2,10 +2,9 @@
 presets:
   -
     name: "default"
-    board: "nucleo_f767zi"
+    board: "nrf52840dk/nrf52840"
     cmake-file: "app.cmake"
-    overlay-file: "boards/nucleo_f767zi/nucleo_f767zi.overlay"
+    overlay-file: "boards/nrf52840dk/nrf52840dk.overlay"
     conf-files:
       common:
         - "app.conf"
-    flash-runner: "openocd"

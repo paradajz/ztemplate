@@ -1,3 +1,32 @@
 mainmenu "Project-specific configuration"
 
 source "Kconfig.zephyr"
+
+menu "USB device identity"
+    depends on USB_DEVICE_STACK_NEXT
+
+config USB_MAX_POWER
+    int "USB maximum power in 2 mA units"
+    default 100
+    range 0 255
+    help
+      bMaxPower value for the USB configuration descriptor. The value is
+      expressed in 2 mA units, so 100 advertises 200 mA.
+
+config USB_MANUFACTURER
+    string "USB manufacturer string"
+    default "Shanea Controls"
+
+config USB_PRODUCT
+    string "USB product string"
+    default "OpenDeck"
+
+config USB_VID
+    hex "USB vendor ID"
+    default 0x1209
+
+config USB_PID
+    hex "USB product ID"
+    default 0x8472
+
+endmenu
